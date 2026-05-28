@@ -6,7 +6,8 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #727272;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container {
@@ -23,5 +24,67 @@ header h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  border: none;
+  background: #64b2ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.todo-input button:hover {
+  background: #0056b3;
+  transform: scale(1);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.todo-item input {
+  padding: 6px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons button {
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
